@@ -1,4 +1,4 @@
-window.onload = function () {
+function Overlay () {
     const modalContainer = document.querySelector(".moduleContainer");
     const OPEN_MODAL_CLASSNAME = "openModal";
 

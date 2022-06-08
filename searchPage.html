@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="overlay.css">
+  <title>Страница поиска</title>
+  <script src="overlay.js"></script>
+</head>
+
+<body class="searchPage">
+
+<header class="header">
+  <div class="leftMenu">
+    <button class="BurgerMenu">
+      <img src="asset/Burger.svg" width="51" height="38">
+    </button>
+    <a class="logo">
+      <img src="asset/logo.png" width="212" height="42">
+    </a>
+    <span class="ChoiceCity" >Ваш город:</span>
+    <button class="SelectedCity">
+      г.Ижевск
+    </button>
+  </div>
+  <div>
+    <a class="help">
+      Помощь
+    </a>
+    <button class="Auth">
+      Вход
+    </button>
+    <button class="Register">
+      Регистрация
+    </button>
+  </div>
+</header>
+
+<div class="searchPageContainer">
+  <div class="wrapper searchAndServiceWrapper">
+    <div class="searchContainerOnSearchPage">
+      <div class="searchWrapper">
+        <input class="searchField" type="text" placeholder="Просто напишите, что ищите"/>
+        <button class="searchButton">
+          <img src="asset/zoom.svg" height="62" width="62"/>
+        </button>
+      </div>
+
+      <div class="filtersContainerSearchPage">
+        <span class="filterTitle">Часто задоваемые вопрсоы:</span>
+        <button class="filterSearchPage">Вакцинация</button>
+        <button class="filterSearchPage">QR</button>
+        <button class="filterSearchPage">Пособия</button>
+        <button class="filterSearchPage">ПЦР</button>
+        <button class="filterSearchPage">Как зарегистрироваться</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="moduleContainer">
+  <div class="overlay"></div>
+  <div class="modal">
+    <h2 class="modalTitle">Где вы находитесь?</h2>
+    <button class="closeButton"> <img src="asset/close.svg" width="56" height="56"/></button>
+    <div class="modalTextContainer">
+      <span class="modalText">Вы увидите услуги, доступные для вашего региона</span>
+      <div class="locationContainer">
+        <div class="currentLocationContainer">
+          <p class="currentLocationTitle">Текущее местоположение:</p>
+          <p class="currentLocationText">Удмуртская Республика/г. Ижевск </p>
+        </div>
+        <div class="choiceLocationContainer">
+          <p class="choiceLocationTitle">Выбор региона:</p>
+          <div class="choiceLocationButtonsContainer">
+            <label class="radioButtonText"><input class="radioButton" type="radio" name="region" value="auto"/> Автоматически </label>
+            <label class="radioButtonText"><input class="radioButton" type="radio" name="region" value="manual"/> Вручную </label>
+          </div>
+        </div>
+        <button class="applyRegionButton">Применить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

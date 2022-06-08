@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="overlay.css">
+    <link rel="stylesheet" href="sideMenu.css">
+    <title>Гослуги</title>
+    <script src="overlay.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="leftMenu">
+            <button class="burgerMenu">
+                <img src="asset/Burger.svg" width="51" height="38">
+            </button>
+            <a class="logo">
+                <img src="asset/logo.png" width="212" height="42">
+            </a>
+            <span class="choiceCity" >Ваш город:</span>
+            <button class="selectedCity">
+                г.Ижевск
+            </button>
+        </div>
+        <div>
+            <a class="help">
+                Помощь
+            </a>
+            <a href="login.html"><button class="auth">
+                Вход
+            </button></a>
+            <a href="registration.html"><button class="register">
+                Регистрация
+            </button></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="wrapper searchAndServiceWrapper">
+            <div class="searchContainer">
+                <div class="searchWrapper">
+                    <input class="searchField" type="text" placeholder="Просто напишите, что ищите"/>
+                    <button class="searchButton">
+                        <img src="asset/zoom.svg" height="62" width="62"/>
+                    </button>
+                </div>
+                <div class="filtersContainer">
+                    <button class="filter">Вакцинация</button>
+                    <button class="filter">QR</button>
+                    <button class="filter">Пособия</button>
+                    <button class="filter">ПЦР</button>
+                    <button class="filter">Как зарегистрироваться</button>
+                </div>
+            </div>
+            <div class="serviceButtonsContainer">
+                <ul class="ServiceList">
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/health.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName">Здоровье</span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/folder.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName">Справки Выписки</span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/penchen.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName"> Пособия Пенсия Льготы </span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/car.svg" width="79" height="80"/>
+                            </div>
+                            <span class="ServiceName">Авто <br> Права <br> Транспорт</span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/family.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName">Семья</span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/education.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName"> Дети Образование </span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/pasport.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName">Паспорта Регистрация</span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/judge.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName"> Штрафы Долги </span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/house.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName">Недвижимость Стройка</span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/country.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName">Ведомства</span>
+                       </button>
+                    </li>
+                    <li class="serviceListItem">
+                        <button class="serviceButton">
+                            <div class="ServiceImageContainer">
+                                <img src="asset/other.svg" width="80" height="80"/>
+                            </div>
+                            <span class="ServiceName">Прочее</span>
+                       </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="subContainer">
+        <h2 class="titleSubContainer">Проверить начисления и оплатить</h2>
+        <div class="RowSubContainer">
+            <button class="SubContainerButton">
+                <div class="ButtonPicture"></div>
+                <div class="ButtonText">
+                    <span class="ButtonTextTitle">Штрафы</span>
+                    <span class="ButtonTextBase">В течение 20 дней скидка 50% на штрафы ГИБДД</span>
+                </div>
+            </button>
+            <button class="SubContainerButton">
+                <div class="ButtonPicture"></div>
+                <div class="ButtonText">
+                    <span class="ButtonTextTitle">Задолженности у приставов</span>
+                    <span class="ButtonTextBase">Поиск исполнительных производств по вашим данным</span>
+                </div>
+            </button>
+            <button class="SubContainerButton">
+                <div class="ButtonPicture"></div>
+                <div class="ButtonText">
+                    <span class="ButtonTextTitle">Счета за услуги</span>
+                    <span class="ButtonTextBase">Детские сады, кружки, аренда</span>
+                </div>
+            </button>
+            <button class="SubContainerButton">
+                <div class="ButtonPicture"></div>
+                <div class="ButtonText">
+                    <span class="ButtonTextTitle">Государственные пошлины</span>
+                    <span class="ButtonTextBase">Скидка 30% на оформление пошлин через госуслуги</span>
+                </div>
+            </button>
+            <button class="SubContainerButton">
+                <div class="ButtonPicture"></div>
+                <div class="ButtonText">
+                    <span class="ButtonTextTitle">Налоговые задолженности</span>
+                    <span class="ButtonTextBase">Достаточно вашего ИНН для проверки задолженности</span>
+                </div>
+            </button>
+            <button class="SubContainerButton">
+                <div class="ButtonPicture"></div>
+                <div class="ButtonText">
+                    <span class="ButtonTextTitle">По номеру квитанции</span>
+                    <span class="ButtonTextBase">Поиск задолженностей по УИН</span>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div>
+                <UL class="ulFooter">
+                    <li class="liFooter">
+                        <a>
+                            Личный кабинет
+                        </a>
+                    </li>
+                    <li class="liFooter">
+                        <a>
+                            Регистрация на Госуслугах
+                        </a>
+                    </li>
+                    <li class="liFooter">
+                        <a>
+                            Помощь
+                        </a>
+                    </li>
+                </UL>
+            </div>
+            <div>
+                <UL class="ulFooter">
+                    <li class="liFooter">
+                        <a>
+                            Бизнесу
+                        </a>
+                    </li>
+                    <li class="liFooter">
+                        <a>
+                            Иностранцам
+                        </a>
+                    </li>
+                    <li class="liFooter">
+                        <a >
+                            Партнерам
+                        </a>
+                    </li>
+                </UL>
+            </div>
+            <div>
+                <UL class="ulFooter">
+                    <li class="liFooter">
+                        <a>
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="liFooter">
+                        <a>
+                            Центры обслуживания на картха
+                        </a>
+                    </li>
+                </UL>
+            </div>
+            <div class="SocialNetwork">
+                <a>Наши социальные сети:</a>
+                <Ul class="SocialNetworkButtonBlock">
+                    <li><button class="SocialNetworkButton">Tg</button></li>
+                    <li><button class="SocialNetworkButton">Vk</button></li>
+                    <li><button class="SocialNetworkButton">Ok</button></li>
+                    <li><button class="SocialNetworkButton">R</button></li>
+                </Ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="moduleContainer">
+        <div class="overlay"></div>
+        <div class="modal">
+            <h2 class="modalTitle">Где вы находитесь?</h2>
+            <button class="closeButton"> <img src="asset/close.svg" width="56" height="56"/></button>
+            <div class="modalTextContainer">
+                <span class="modalText">Вы увидите услуги, доступные для вашего региона</span>
+                <div class="locationContainer">
+                    <div class="currentLocationContainer">
+                        <p class="currentLocationTitle">Текущее местоположение:</p>
+                        <p class="currentLocationText">Удмуртская Республика/г. Ижевск </p>
+                    </div>
+                    <div class="choiceLocationContainer">
+                        <p class="choiceLocationTitle">Выбор региона:</p>
+                        <div class="choiceLocationButtonsContainer">
+                            <label class="radioButtonText"><input class="radioButton" type="radio" name="region" value="auto"/> Автоматически </label>
+                            <label class="radioButtonText"><input class="radioButton" type="radio" name="region" value="manual"/> Вручную </label>
+                        </div>
+                    </div>
+                    <button class="applyRegionButton">Применить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sideMenuContainer">
+        <div class="sideMenuOverlay"></div>
+        <div class="sideMenu">
+            <div class="sideMenuTitle">
+                <span class="sideMenuTitleText">Услуги для</span>
+                <button class="sideMenuTitleDropdownMenu">
+                    Граждан
+                </button>
+            </div>
+            <ul class="filterList">
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/health.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Здоровье</span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/folder.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Справки<br/>Выписки</span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/penchen.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Пособия<br/>Пенсии<br/>Льготы</span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/car.svg" width="96" height="96"/>
+                        <span class="filterListButtonText">Авто<br/>Права<br/>Транспорт </span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/family.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Семья</span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/education.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Дети<br/>Образование</span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/pasport.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Паспорт <br/>Регистраиця</span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/judge.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Штрафы <br/>Долги</span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/house.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Недвижиость<br/>Стройка</span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/country.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Ведомоства</span>
+                    </button>
+                </li>
+                <li class="filterListItem">
+                    <button class="filterListButton">
+                        <img src="asset/other.svg" width="100" height="100"/>
+                        <span class="filterListButtonText">Прочье</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="sideMenu.js"></script>
+</body>
+
+</html>
